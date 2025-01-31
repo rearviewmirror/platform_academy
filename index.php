@@ -10,6 +10,8 @@ $dbDatabase = getenv('DB_DATABASE');
 
 echo $dbServer . "<br>";
 echo $dbDatabase . "<br>";
+echo $dbUsername . "<br>";
+echo $dbPassword . "<br>";
 
 /* Connect to PostgreSQL and select the database. */
 #$constring = "host=" . $dbServer . " dbname=" . $dbDatabase . " user=" . $dbUsername . " password=" . $dbPassword ;
