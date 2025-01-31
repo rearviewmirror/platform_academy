@@ -2,11 +2,14 @@
 <body>
 <h1>Sample page</h1>
 <?php
-
+include 'db_connect.inc';
 $dbServer = getenv('DB_SERVER');
 $dbUsername = getenv('DB_USERNAME');
 $dbPassword = getenv('DB_PASSWORD');
 $dbDatabase = getenv('DB_DATABASE');
+
+echo $dbServer . "<br>";
+echo $dbDatabase . "<br>";
 
 /* Connect to PostgreSQL and select the database. */
 #$constring = "host=" . $dbServer . " dbname=" . $dbDatabase . " user=" . $dbUsername . " password=" . $dbPassword ;
