@@ -8,13 +8,15 @@ $dbUsername = getenv('DB_USERNAME');
 $dbPassword = getenv('DB_PASSWORD');
 $dbDatabase = getenv('DB_DATABASE');
 $instanceName = getenv('INSTANCE_NAME');
-$az = getenv('AVAILABILITY_ZONE');
+$az = getenv('AZ');
+$ip = getenv('PRIVATE_IP');
 echo $dbServer . "<br>";
 echo $dbDatabase . "<br>";
 echo $dbUsername . "<br>";
 echo $dbPassword . "<br>";
 echo $instanceName . "<br>";
 echo $az . "<br>";
+echo $ip . "<br>";
 
 /* Connect to PostgreSQL and select the database. */
 #$constring = "host=" . $dbServer . " dbname=" . $dbDatabase . " user=" . $dbUsername . " password=" . $dbPassword ;
